@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+
+<h2>Chessboard with Pieces (DOM Manipulation)</h2>
+
+<div id="board"></div>
+
+<script src="task2.js"></script>
+
+</body>
+</html>
