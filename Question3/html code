@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+
+<h1>Bouncing Ball (Start / Stop)</h1>
+
+<div id="ball"></div>
+
+<button id="startBtn">Start</button>
+<button id="stopBtn">Stop</button>
+
+<script src="task3.js"></script>
+
+</body>
+</html>
