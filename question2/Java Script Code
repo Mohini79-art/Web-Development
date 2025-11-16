@@ -1,0 +1,28 @@
+const board = document.getElementById("board");
+
+const whitePieces = ["♖","♘","♗","♕","♔","♗","♘","♖"];
+const blackPieces = ["♜","♞","♝","♛","♚","♝","♞","♜"];
+
+// Create 8×8 board
+for (let row = 0; row < 8; row++) {
+    for (let col = 0; col < 8; col++) {
+
+        const cell = document.createElement("div");
+        cell.classList.add("cell");
+
+        // Coloring pattern
+        if ((row + col) % 2 === 0) {
+            cell.classList.add("light");
+        } else {
+            cell.classList.add("dark");
+        }
+
+        // Add pieces (DOM manipulation)
+        if (row === 0) cell.textContent = blackPieces[col];  // Black major
+        if (row === 1) cell.textContent = "♟";               // Black pawns
+        if (row === 6) cell.textContent = "♙";               // White pawns
+        if (row === 7) cell.textContent = whitePieces[col];  // White major
+
+        board.appendChild(cell);
+    }
+}
