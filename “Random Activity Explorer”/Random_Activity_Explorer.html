@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Activity Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h2>Random Activity Explorer</h2>
+
+    <!-- Filter -->
+    <div class="filter-box">
+      <select id="typeSelect">
+        <option value="">Any Type</option>
+        <option value="education">Education</option>
+        <option value="recreational">Recreational</option>
+        <option value="social">Social</option>
+        <option value="diy">DIY</option>
+        <option value="charity">Charity</option>
+        <option value="cooking">Cooking</option>
+        <option value="relaxation">Relaxation</option>
+        <option value="music">Music</option>
+        <option value="busywork">Busywork</option>
+      </select>
+    </div>
+
+    <!-- Activity Card -->
+    <div id="activityCard" class="card">
+      <p class="loading">Loading...</p>
+    </div>
+
+    <!-- Button -->
+    <button id="newActivityBtn">Get Another Activity</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
